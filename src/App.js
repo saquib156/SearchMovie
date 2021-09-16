@@ -5,7 +5,7 @@ import './App.css';
 //import Forms from './components/Forms';
 //import Clock from './components/Clock';
 //import FetchData from './components/FetchData';
-import SearchMovie from './movie/SearchMovie';
+import SearchMovie from './components/movie/SearchMovie';
 
 function App() {
   return (

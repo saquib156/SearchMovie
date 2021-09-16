@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import MovieBlock from './MovieBlock';
+import SearchForm from './SearchForm';
 import './SearchMovie.css';
 import TopHead from './TopHead';
 
@@ -39,9 +40,13 @@ class SearchMovie extends Component {
             return response.json();
         })
         .then((data) => {
-            this.setState({
-                movies: data.Search,
-            });
+            if(data.Search){
+                this.setState({
+                    movies: data.Search,
+                });
+            } else {
+                alert("Please enter movie name");
+            }
             //console.log("data", data);
         })
         .catch((error) => {
@@ -57,10 +62,11 @@ class SearchMovie extends Component {
                     <TopHead />
                 </header>
                 
-                <div className="search-form">
-                    <input type="text" value={searchmovie} ref={this.inputRefs} onChange={this.handleSearchInput} />
-                    <button type="button" onClick={this.handleSearchBtn}>Search</button>
-                </div>
+                <SearchForm 
+                    searchValue={searchmovie}
+                    handleSearchInput={this.handleSearchInput}
+                    handleSearchBtn={this.handleSearchBtn}
+                />
 
                 <div className="movie-result">
                     <MovieBlock Movies={movies} />
