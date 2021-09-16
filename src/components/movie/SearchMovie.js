@@ -27,7 +27,7 @@ class SearchMovie extends Component {
     }
 
     handleSearchBtn = (e) => {
-        let search = `${this.state.searchmovie}`;
+        let search = this.state.searchmovie;
         this.makeApiCall(search);
         e.preventDefault();
     }
