@@ -7,7 +7,7 @@ import './App.css';
 //import FetchData from './components/FetchData';
 //import SearchMovie from './components/movie/SearchMovie';
 //import ClockTimer from './components/hooks/ClockTimer';
-import Counter from './components/hooks/Counter';
+import Counter from './components/hooks/counter/Counter';
 
 function App() {
   return (

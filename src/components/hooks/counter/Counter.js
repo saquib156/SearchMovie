@@ -3,16 +3,14 @@ import './Counter.css';
 
 const Counter = (props) => {
     const [count, setCount] = useState(0);
-    
-    const countVal = document.querySelector("#countVal");
 
     useEffect(() => {
         if(count===0){
-            countVal.style.color = '#666666';
+            document.getElementById("countVal").style.color = '#666666';
         } else if(count < 0){
-            countVal.style.color = 'red';
+            document.getElementById("countVal").style.color = 'red';
         } else if(count > 0){
-            countVal.style.color = 'green';
+            document.getElementById("countVal").style.color = 'green';
         }
     }, [count]);
 
