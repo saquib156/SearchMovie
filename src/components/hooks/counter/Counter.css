@@ -1,0 +1,28 @@
+.counter-box {
+    margin-top: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 500px;
+    border-radius: 8px;
+    padding: 10px;
+    padding-bottom: 40px;
+    background-color: #ffffc8;
+}
+
+.head {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-box {
+    display: flex;
+    justify-content: space-evenly;
+}
+.btn {
+    width: 120px;
+    padding: 10px 0;
+    background-color: #D11606;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
