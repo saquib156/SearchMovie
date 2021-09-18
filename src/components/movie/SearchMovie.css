@@ -32,16 +32,18 @@
 .movie-result {
     width: 1200px;
     margin: 40px auto;
+    display: flex;
+    flex-wrap: wrap;
 }
 .movie-block {
-    width: 22%;
-    min-height: 400px;
+    width: 268px;
     margin: 15px;
-    float: left;
+    flex-direction: column;
+    border: 1px solid #ffe6c8;
 }
 .movie-block img {
-    height: 360px;
-    border: 1px solid #ffe6c8;
+    height: 340px;
+    object-fit: cover;
 }
 .movie-title {
     height: 50px;
@@ -53,5 +55,11 @@
 }
 .movie-title h5 {
     margin: 0;
-    padding: 0 5px;
+    padding: 0 8px;
+}
+.err {
+    font-size: 14px;
+    color: red;
+    text-align: left;
+    margin-top: 5px;
 }

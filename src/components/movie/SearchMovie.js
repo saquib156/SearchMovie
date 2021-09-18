@@ -9,7 +9,8 @@ class SearchMovie extends Component {
         super(props);
         this.state = {
             movies : [],
-            searchmovie : ''
+            searchmovie : '',
+            err: ''
         }
 
         this.inputRefs = React.createRef();
@@ -24,12 +25,20 @@ class SearchMovie extends Component {
         this.setState({
             searchmovie: e.target.value,
         });
+
+        this.state.err = '';
     }
 
     handleSearchBtn = (e) => {
         let search = this.state.searchmovie;
         this.makeApiCall(search);
         e.preventDefault();
+        
+        if(search===''){
+            this.setState({
+                err: 'Please enter movie name',
+            });
+        }
     }
 
     makeApiCall(movie){
@@ -44,8 +53,6 @@ class SearchMovie extends Component {
                 this.setState({
                     movies: data.Search,
                 });
-            } else {
-                alert("Please enter movie name");
             }
             //console.log("data", data);
         })
@@ -55,17 +62,18 @@ class SearchMovie extends Component {
     }
 
     render() {
-        const { searchmovie, movies } = this.state;
+        const { searchmovie, movies, err } = this.state;
         return (
             <>
                 <header className="head-section">
-                    <TopHead />
+                    <TopHead title="Movies" />
                 </header>
                 
                 <SearchForm 
                     searchValue={searchmovie}
                     handleSearchInput={this.handleSearchInput}
                     handleSearchBtn={this.handleSearchBtn}
+                    errMsg={err}
                 />
 
                 <div className="movie-result">

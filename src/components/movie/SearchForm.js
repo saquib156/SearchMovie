@@ -20,12 +20,13 @@ import React from 'react';
 }*/
 
 const SearchForm = (props) => {
-    const { searchInput, handleSearchInput, handleSearchBtn } = props;
+    const { searchInput, handleSearchInput, handleSearchBtn, errMsg } = props;
     return(
         <>
             <div className="search-form">
                 <input type="text" value={searchInput} onChange={handleSearchInput} />
                 <button onClick={handleSearchBtn} >Search</button>
+                <div className="err">{errMsg}</div>
             </div>
         </>
     )
