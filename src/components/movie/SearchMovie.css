@@ -30,19 +30,20 @@
 }
 
 .movie-result {
-    width: 1200px;
+    width: 90%;
     margin: 40px auto;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 .movie-block {
-    width: 268px;
+    width: 280px;
     margin: 15px;
     flex-direction: column;
     border: 1px solid #ffe6c8;
 }
 .movie-block img {
-    height: 340px;
+    height: 350px;
     object-fit: cover;
 }
 .movie-title {
