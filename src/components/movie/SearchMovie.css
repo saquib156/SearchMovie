@@ -37,7 +37,7 @@
     justify-content: center;
 }
 .movie-block {
-    width: 280px;
+    width: 270px;
     margin: 15px;
     flex-direction: column;
     border: 1px solid #ffe6c8;
