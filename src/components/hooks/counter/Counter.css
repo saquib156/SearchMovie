@@ -26,3 +26,13 @@
     border: none;
     cursor: pointer;
 }
+
+.grey {
+    color: #666666;
+}
+.red {
+    color: red;
+}
+.green {
+    color: green;
+}
