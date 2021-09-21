@@ -8,13 +8,14 @@ import './App.css';
 //import SearchMovie from './components/movie/SearchMovie';
 //import ClockTimer from './components/hooks/ClockTimer';
 //import Counter from './components/hooks/counter/Counter';
-import MainComponent from './components/MainComponent';
+//import MainComponent from './components/MainComponent';
+import BlogPost from './components/blog/BlogPost';
 
 function App() {
   return (
     <div className="App">
         
-        <MainComponent />
+        <BlogPost />
     </div>
   ); 
 }

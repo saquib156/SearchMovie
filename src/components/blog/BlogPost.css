@@ -1,0 +1,43 @@
+.head-section {
+    width: 100%;
+}
+.head-section h1 {
+    border-bottom: 1px solid;
+    padding-bottom: 20px;
+    color: rgb(135, 161, 37);
+}
+
+.post-result {
+    width: 90%;
+    margin: 40px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.post-block {
+    width: 350px;
+    margin: 15px;
+    flex-direction: column;
+    border: 1px solid rgb(135 161 37);
+}
+.post-title {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(135 161 37);
+}
+.post-title h5 {
+    margin: 0;
+    padding: 8px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #ffffff;
+}
+.post-desc {
+    margin: 0;
+    padding: 8px;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(135 161 37);
+}
