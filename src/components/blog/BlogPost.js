@@ -31,7 +31,7 @@ const BlogPost = () => {
             </header>
 
             <div className="post-result">
-                <PostBlock Posts={posts} />
+                <PostBlock posts={posts} />
             </div>
         </>
     )
